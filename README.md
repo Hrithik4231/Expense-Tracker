@@ -1,51 +1,65 @@
-To-Do List Application – A Simple Task Management System
-The To-Do List Application is a lightweight and efficient console-based task management system built using Python. This project allows users to add, view, mark, and remove tasks, helping them stay organized and manage their daily activities effectively. The application saves tasks to a file, ensuring data persistence even after the program is closed and reopened.
+Project Name: Responsive Expense Tracker App (Angular)
 
-Project Overview
-This project is designed to be a simple yet functional task manager, where users can perform the following operations:
-✅ Add new tasks
-✅ View all tasks with their status (completed/incomplete)
-✅ Mark tasks as completed or incomplete
-✅ Remove tasks when they are no longer needed
-✅ Save tasks to a file for future reference
+Overview:
+A web-based Angular application that allows users to track their daily expenses. Users can add, edit, delete, and categorize expenses. The app features a responsive UI, real-time data updates, chart visualizations, and localStorage support. Built following Propel Apps' Angular development practices.
 
-The application is menu-driven, making it easy to navigate through various options. It uses a text file (tasks.txt) to store and retrieve tasks, ensuring that users do not lose their progress when they close the program.
+Objectives:
+- Track daily expenses by category and amount.
+- Provide monthly and category-wise insights.
+- Build a mobile-first responsive UI.
+- Use reactive forms with validation.
+- Implement effective component-service communication.
 
-Key Features & Functionalities
-📌 1. Adding a Task
-Users can enter a task description, and it will be stored in the system with an initial status of "Incomplete." This allows users to maintain a growing list of tasks as needed.
+Tech Stack:
+- Angular 17+
+- Angular Material
+- SCSS, Flex Layout
+- Component State + Services
+- localStorage (can be extended to Firebase/Supabase)
+- ng2-charts (Chart.js)
 
-📌 2. Viewing Tasks
-The program displays a neatly formatted list of all tasks, along with their respective statuses ("Completed" or "Incomplete"). If there are no tasks, the program informs the user.
+Key Features:
+- Add, edit, delete expenses with validation
+- Filter and sort by date/category/amount
+- Dashboard with total, monthly, and pie chart summary
+- Charts update dynamically using Observables
+- LocalStorage data persistence
+- Fully responsive layout
 
-📌 3. Marking a Task as Completed or Incomplete
-Users can update the status of any task by selecting its number from the displayed list. A completed task can also be reverted to an incomplete state, allowing for flexibility in task management.
+Component Communication:
+- Uses @Input(), @Output()
+- Shared service for state management
 
-📌 4. Removing a Task
-If a task is no longer needed, users can remove it from the list by selecting its number. The application ensures the list remains updated without unnecessary clutter.
+Form Validation:
+- Reactive Forms with required, min, and pattern validators
+- Inline error display
 
-📌 5. Data Persistence (Saving & Loading Tasks)
-When the program starts, it loads tasks from a file (tasks.txt), ensuring previous tasks are accessible.
-When exiting, the program saves all current tasks to the same file, preserving user data.
-If the file does not exist, the program starts with a clean slate and informs the user.
-Technologies Used
-🔹 Programming Language: Python
-🔹 File Handling: Used for saving and retrieving tasks from tasks.txt
-🔹 Lists & Dictionaries: Used to store and manage tasks dynamically
-🔹 User Input Handling: Ensures smooth user interaction through command-line prompts
+Folder Structure:
+```
+/src/app
+|-- components
+|   |-- expense-form
+|   |-- expense-list
+|   |-- dashboard
+|-- services
+|   |-- expense.service.ts
+|-- models
+|   |-- expense.model.ts
+|-- app-routing.module.ts
+|-- app.module.ts
+```
 
-How It Works (Execution Flow)
-1️⃣ Program Launch: The application starts by loading existing tasks from the file.
-2️⃣ Main Menu: The user is presented with five options to manage tasks.
-3️⃣ Task Operations: Users can add, view, mark, or remove tasks based on their needs.
-4️⃣ Save & Exit: When the user chooses to exit, all tasks are saved to the file, ensuring data is not lost.
+Timeline:
+Week 1 - Setup project and UI  
+Week 2 - Add/Edit/Delete features  
+Week 3 - Integrate charts, polish UI  
+Week 4 - Testing, error handling, documentation
 
-Possible Enhancements
-This project can be expanded with additional features such as:
-🔹 GUI Interface – Convert the console-based app into a graphical interface using Tkinter or PyQt.
-🔹 Deadline & Reminders – Allow users to set due dates for tasks and send notifications.
-🔹 Priority Levels – Add priority labels to tasks for better organization.
-🔹 Cloud Storage Integration – Store tasks in a database for remote access across multiple devices.
+Future Enhancements:
+- Firebase backend
+- User auth
+- Export to CSV/PDF
+- Budget/savings goals
 
-Conclusion
-The To-Do List Application is a great beginner-friendly project that helps users improve their Python skills while creating a useful productivity tool. With features like task management, data persistence, and user interaction, it serves as a foundation for more advanced task management systems. 🚀
+Acknowledgements:
+This project was created as part of the Propel Apps onboarding process to align with Angular development practices.
