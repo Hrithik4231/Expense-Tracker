@@ -1,0 +1,18 @@
+<header>
+  <h1>{{ title }}</h1>
+  <nav>
+    <ul>
+      <li><a routerLink="/dashboard" routerLinkActive="active-link">Dashboard</a></li>
+      <li><a routerLink="/expenses" routerLinkActive="active-link">View Expenses</a></li>
+      <li><a routerLink="/expenses/new" routerLinkActive="active-link">Add Expense</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <router-outlet></router-outlet>
+</main>
+
+<footer>
+  <p>&copy; 2023 Responsive Expense Tracker App</p>
+</footer>

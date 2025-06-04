@@ -1,0 +1,39 @@
+/* src/app/app.component.scss */
+header {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    li a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.1rem;
+
+      &:hover,
+      &.active-link {
+        text-decoration: underline;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+main {
+  padding: 1rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-top: 1px solid #ccc;
+}
