@@ -50,9 +50,9 @@ Folder Structure:
 ```
 
 Timeline:
-Week 1 - Setup project and UI  
-Week 2 - Add/Edit/Delete features  
-Week 3 - Integrate charts, polish UI  
+Week 1 - Setup project and UI
+Week 2 - Add/Edit/Delete features
+Week 3 - Integrate charts, polish UI
 Week 4 - Testing, error handling, documentation
 
 Future Enhancements:
